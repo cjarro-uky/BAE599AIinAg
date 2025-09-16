@@ -5,9 +5,9 @@ import matplotlib.pyplot as plt
 st.title('Agricultural Data Analysis Dashboard')
 
 # Read all CSV files
-cropland_df = pd.read_csv('C:\\Users\\caja222\\OneDrive - University of Kentucky\\Documents\\BAE599 - AI in Ag\\CornDB\\Cropland Value.csv')
-price_received_df = pd.read_csv('C:\\Users\\caja222\\OneDrive - University of Kentucky\\Documents\\BAE599 - AI in Ag\\CornDB\\PriceReceived.csv')
-crop_prices_df = pd.read_csv('C:\\Users\\caja222\\OneDrive - University of Kentucky\\Documents\\BAE599 - AI in Ag\\CornDB\\Crop Prices.csv')
+cropland_df = pd.read_csv('Cropland Value.csv')
+price_received_df = pd.read_csv('PriceReceived.csv')
+crop_prices_df = pd.read_csv('Crop Prices.csv')
 
 # Clean cropland values
 cropland_df['Value'] = cropland_df['Value'].str.replace('$', '').str.replace(',', '').astype(float)
